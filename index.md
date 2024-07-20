@@ -5,19 +5,14 @@
 ### Category Name 1 
 
 [Project 1 Title](/sample_page)
-<script src="https://www.example.com/javascripts/api/tableau-2.js"></script>
-<div id="tableauViz"></div>
-function initializeViz() {
-var placeholderDiv = document.getElementById("tableauViz");
-var url = "https://public.tableau.com/views/AustinCrime2022-2019/Dashboard1";
-var options = {
- width: '600px',
- height: '600px',
- hideTabs: true,
- hideToolbar: true,
- };
-viz = new tableau.Viz(placeholderDiv, url, options);
-}
+<script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+
+
+<tableau-viz id="tableauViz"       
+  src='https://public.tableau.com/views/AustinCrime2022-2019/Dashboard1'      
+  toolbar="bottom" hide-tabs>
+</tableau-viz>
+
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
