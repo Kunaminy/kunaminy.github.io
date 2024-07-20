@@ -5,8 +5,17 @@
 ### Category Name 1 
 
 [Project 1 Title](/sample_page)
-<script src="https://public.tableau.com/views/AustinCrime2022-2019/Dashboard1"></script>
-<div id="tableauViz"></div>
+function initializeViz() {
+var placeholderDiv = document.getElementById("tableauViz");
+var url = "https://public.tableau.com/views/AustinCrime2022-2019/Dashboard1";
+var options = {
+ width: '600px',
+ height: '600px',
+ hideTabs: true,
+ hideToolbar: true,
+ };
+viz = new tableau.Viz(placeholderDiv, url, options);
+}
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
