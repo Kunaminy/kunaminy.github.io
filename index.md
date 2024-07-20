@@ -5,6 +5,8 @@
 ### Category Name 1 
 
 [Project 1 Title](/sample_page)
+<script src="https://www.example.com/javascripts/api/tableau-2.js"></script>
+<div id="tableauViz"></div>
 function initializeViz() {
 var placeholderDiv = document.getElementById("tableauViz");
 var url = "https://public.tableau.com/views/AustinCrime2022-2019/Dashboard1";
